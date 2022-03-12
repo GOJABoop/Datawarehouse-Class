@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 1</title>
+</head>
+<body>
+    <h1>Cuantas veces se repite "input"</h1>
+    <h2>Ingrese un texto en el siguiente lienzo que contenga la palabra input en repetidas ocasiones.</h2>
+    <form action="/repeticiones_input/solucion" method="post" name="form_cuadraticas">
+        <textarea name="lienzo" id="" cols="30" rows="10"></textarea><br>
+        <button type="submit">Cuantas veces se repite la palabra "input"?</button>
+    </form>
+    <br><br>
+    {% if verificado == True %}
+        <label>Input se repite: {{repeticiones}} veces</label>
+        <br>
+    {%endif %}
+    <a href="/">Regresar al inicio</a>
+</body>
+</html>

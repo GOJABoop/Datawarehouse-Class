@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 1</title>
+</head>
+<body>
+    <h1>Resolución de ecucaciones cuadráticas</h1>
+    <h2>Ingrese el valor númerico en cada uno de los campos: </h2>
+    <form action="/solucionador_cuadraticas/solucion" method="post" name="form_cuadraticas">
+        <ul>
+            <li>
+                <label for="">a</label>
+                <input type="number" name="a">
+            </li>
+            <li>
+                <label for="">b</label>
+                <input type="number" name="b">
+            </li>
+            <li>
+                <label for="">c</label>
+                <input type="number" name="c">
+            </li>
+        </ul>
+        <button type="submit">Solución</button>
+    </form>
+    <br><br>
+    {% if verificado == True and solucion == True: %}
+        <label>La solución es:</label>
+        <ul>
+            <li>X1 = {{x1}}</li>
+            <li>X2 = {{x2}}</li>
+        </ul>
+        <br>
+    {% else %}
+        <label>La ecuación tiene solucionaes imaginarias</label>
+        <br>
+    {%endif %}
+    <a href="/">Regresar al inicio</a>
+</body>
+</html>

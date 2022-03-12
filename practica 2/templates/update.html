@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2</title>
+</head>
+<body>
+    <h1>Actulizar país</h1>
+    <form action="/update/country" method="post" name="update_country">
+        <label>Código de país: </label>
+        <input type="text" name="code"> <br>
+
+        <label>Nombre de país: </label>
+        <input type="text" name="name"> <br>
+
+        <label>Continente de país: </label>
+        <input type="text" name="continent"> <br>
+
+        <label>Región: </label>
+        <input type="text" name="region"> <br>
+
+        <label>Superficie de país: </label>
+        <input type="number" name="surface"> <br>
+
+        <label>Año de independencia: </label>
+        <input type="number" name="indepYear"> <br>
+
+        <label>Población: </label>
+        <input type="number" name="population"> <br>
+
+        <label>Esperanza de vida: </label>
+        <input type="number" name="lifeExp"> <br>
+
+        <label>GNP: </label>
+        <input type="number" name="gnp"> <br>
+
+        <label>GNP old: </label>
+        <input type="number" name="gnp_old"> <br>
+
+        <label>Nombre local: </label>
+        <input type="text" name="local_name"> <br>
+
+        <label>Forma de gobierno: </label>
+        <input type="text" name="gover_form"> <br>
+
+        <label>Jefe de estado: </label>
+        <input type="text" name="head_of_state"> <br>
+
+        <label>Capital: </label>
+        <input type="number" name="capital"> <br>
+
+        <label>Código 2: </label>
+        <input type="text" name="code2"> <br>
+
+        <button type="submit">Actualizar</button>
+    </form>
+    <br><br>
+    {% if updated == True %}
+        <label>Actualizado con exito</label>
+        <br>
+    {%endif %}
+    <a href="/">Regresar al inicio</a>
+</body>
+</html>

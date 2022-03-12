@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 1</title>
+</head>
+<body>
+    <h1>Mayor de 10 números</h1>
+    <h2>Ingrese un valor númerico en cada uno de los campos: </h2>
+    <form action="/max" method="post" name="form_mayor">
+        <ul>
+            <li>
+                <label for="">Numero 1</label>
+                <input type="number" name="n1">
+            </li>
+            <li>
+                <label for="">Numero 2</label>
+                <input type="number" name="n2">
+            </li>
+            <li>
+                <label for="">Numero 3</label>
+                <input type="number" name="n3">
+            </li>
+            <li>
+                <label for="">Numero 4</label>
+                <input type="number" name="n4">
+            </li>
+            <li>
+                <label for="">Numero 5</label>
+                <input type="number" name="n5" >
+            </li>
+            <li>
+                <label for="">Numero 6</label>
+                <input type="number" name="n6" >
+            </li>
+            <li>
+                <label for="">Numero 7</label>
+                <input type="number" name="n7" >
+            </li>
+            <li>
+                <label for="">Numero 8</label>
+                <input type="number" name="n8" >
+            </li>
+            <li>
+                <label for="">Numero 9</label>
+                <input type="number" name="n9">
+            </li>
+            <li>
+                <label for="">Numero 10</label>
+                <input type="number" name="n10">
+            </li>
+        </ul>
+        <button type="submit">Cual es el número mayor?</button>
+    </form>
+    <br><br>
+    {% if verificado == True: %}
+        <label>El maximo es: {{max}} </label>
+        <br>
+    {%endif %}
+    <a href="/">Regresar al inicio</a>
+</body>
+</html>
